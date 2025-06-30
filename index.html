@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Browser</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="logo">🎬 MoviePlex</div>
+    <nav class="nav">
+      <button class="nav-btn active">Home</button>
+      <button class="nav-btn">Live TV</button>
+      <button class="nav-btn">On Demand</button>
+      <button class="nav-btn">Discover</button>
+    </nav>
+    <div class="user-controls">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      <button class="sign-in-btn">Sign In</button>
+    </div>
+  </header>
+
+ 
+  <main class="movie-section">
+    <h2 class="section-title">Movies</h2>
+    <div class="movie-grid" id="movie-grid">
+      
+    </div>
+
+    
+    <div class="pagination">
+      <button id="prev-page" disabled>&laquo; Prev</button>
+      <span id="page-indicator">Page 1</span>
+      <button id="next-page">Next &raquo;</button>
+    </div>
+  </main>
+
+  
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>

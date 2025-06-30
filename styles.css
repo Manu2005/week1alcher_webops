@@ -1,0 +1,211 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #444;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  color: #fff;
+  border-bottom: 2px solid #f05454;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.sign-in-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f05454;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-section {
+  padding: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+
+.movie-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+.movie-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 0.75rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+
+
+.movie-detail-page {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.detail-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.detail-banner .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.detail-banner .poster {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.detail-banner .info {
+  max-width: 700px;
+}
+
+.cast-section {
+  margin: 40px;
+}
+
+.cast-section h2 {
+  margin-bottom: 20px;
+}
+
+.cast-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.cast-card {
+  min-width: 120px;
+  text-align: center;
+  color: #fff;
+}
+
+.cast-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.cast-name {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.cast-character {
+  font-size: 0.8rem;
+  color: #ccc;
+}
